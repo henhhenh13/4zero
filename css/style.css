@@ -7,6 +7,9 @@
     --youtube-hover: #ac3528;
 
 }
+.close-full{
+    display: none !important;
+}
 
 *{
     margin: 0;
@@ -495,17 +498,28 @@ header{
         position: fixed;
         height: auto;
         background-color: #F7F5F3;
-        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
         width: auto !important;
         height: 100%;
-        transition: 0.3s ease-in-out;
         background-color: transparent;
         outline: none !important;
         overflow: hidden auto;
         z-index: 1048;
     }
     .show-nav{
-        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        animation: chay-ngang 0.5s ease;
+    }
+    @keyframes chay-ngang {
+        from{
+            transform: translateX(-100%);
+        }
+        to{
+            transform: translateX(0);
+        }
+        
     }
     .head-nav{
         width: 250px;
@@ -529,6 +543,7 @@ header{
         visibility: visible;
     }
     .close-full{
+        display: block !important;
         position: absolute;
         cursor: pointer;
         top: 15%;
