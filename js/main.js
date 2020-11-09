@@ -11,6 +11,30 @@ window.addEventListener('scroll', function() {
 
 
 
+  const menu = document.querySelector('#id-head-nav');
+  const body = document.querySelector('body');
+  const freeDom = document.querySelector('.free-dom');
+  const fullMenu = document.querySelector('.full-menu');
+  const closeX = document.querySelector('.close-full')
+
+function showMenuPhone(){
+  menu.classList.toggle('show-nav');
+  freeDom.classList.toggle('on'); 
+  fullMenu.classList.toggle('on'); 
+  closeX.classList.toggle('chay'); 
+  body.classList.toggle('ghim');
+}
+function closeHet(){
+  menu.classList.remove('show-nav');
+  freeDom.classList.remove('on'); 
+  fullMenu.classList.remove('on'); 
+  closeX.classList.remove('chay'); 
+  body.classList.remove('ghim');
+
+}
+
+
+
 function changeSub1(){
   var pro = document.querySelector('.sub-1');
   pro.classList.toggle('show');
