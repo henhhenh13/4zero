@@ -510,7 +510,7 @@ header{
     .show-nav{
         opacity: 1;
         visibility: visible;
-        animation: chay-ngang 0.5s ease;
+        animation: chay-ngang 0.4s ease;
     }
     @keyframes chay-ngang {
         from{
