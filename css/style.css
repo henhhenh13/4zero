@@ -492,8 +492,7 @@ header{
         white-space: nowrap;
     }
     .menu-items li i{
-        width: 15px;
-        height: 15px;
+        
         font-size: 1.2em;
         margin-right: 1em;
         position: absolute;
