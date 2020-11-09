@@ -492,9 +492,9 @@ header{
         white-space: nowrap;
     }
     .menu-items li i{
-        
         font-size: 1.2em;
-        margin-right: 1em;
+        padding: 15px;
+        margin-top: -0.8em;
         position: absolute;
         display: inline-block;
         max-width: 100%;
