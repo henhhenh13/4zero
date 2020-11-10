@@ -55,6 +55,7 @@ header{
     background-size: cover;
     background-position: 50% 0;
     position: relative;
+    z-index: 9999;
     
 }
 
@@ -314,6 +315,7 @@ header{
     text-align: center;
     position: relative;
     display: flex;
+    
 }
 
 .menu-items li a{
@@ -401,7 +403,6 @@ header{
     visibility: hidden;
     padding: 20px 10px;
     transition: .5s ease;
-    z-index: 10;
 }
 
 .menu-items li:hover .sub-menu{
@@ -452,6 +453,105 @@ header{
     border-bottom-color:  #fff;
     z-index: 0;
 }
+
+.main{
+    background-color: #333;
+    position: relative;
+}
+
+.main .banner{
+    position: relative;
+    min-width: 100%;
+    height: 569px;
+    display: block;
+    background-color: khaki;
+    background-image: url(./images/background/background-main.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.fill{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.main .text-box{
+    width: 54%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 1001;
+}
+
+.main .text-box .text h4{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.main .text-box .text h3{
+    font-size: 3em;
+    font-weight: 1000;
+    margin-bottom: 0.5em;
+}
+
+.main .text-box  a{
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: .97em;
+    letter-spacing: .03em;
+    cursor: pointer;
+    font-weight: bolder;
+    text-align: center;
+    color: currentColor;
+    text-decoration: none;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    border-radius: 0;
+    margin-top: 0;
+    margin-right: 1em;
+    text-shadow: none;
+    line-height: 2.4em;
+    min-height: 2.5em;
+    padding: 0 1.2em;
+    max-width: 100%;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    border: 2px solid white;
+    white-space: pre-wrap;
+    transition: 0.3s;
+}
+.main .text-box a:hover span{
+    transition: 0.5s;
+}
+
+.main .text-box a:hover{
+    background-color: #eeeeee;
+}
+
+.main .text-box a:hover span{
+    color: rgb(121, 118, 118);
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 850px){
     .free-dom.on{
@@ -510,7 +610,7 @@ header{
     .show-nav{
         opacity: 1;
         visibility: visible;
-        animation: chay-ngang 0.4s ease;
+        animation: chay-ngang 0.3s ease;
     }
     @keyframes chay-ngang {
         from{
@@ -672,7 +772,6 @@ header{
         display: none;
     }
     
-
 }
 
 
