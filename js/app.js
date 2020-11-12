@@ -9,10 +9,12 @@ document.addEventListener( 'DOMContentLoaded', function () {
 		850: {
             perPage: 3,
             fixedWidth: '32%',  
+            flickMaxPages: 2,
         },
         550: {
             perPage: 2,
             fixedWidth: '47.9%',  
+            flickMaxPages: 1,
         },
 	}
 }).mount();
@@ -27,10 +29,12 @@ new Splide( '#splide-1' , {
 		850: {
             perPage: 3,
             fixedWidth: '32%',  
+            flickMaxPages: 2,
         },
         550: {
             perPage: 2,
             fixedWidth: '47.9%',  
+            flickMaxPages: 1,
         },
 	}
 }).mount();
@@ -44,11 +48,13 @@ new Splide( '#splide-2' , {
     breakpoints: {
 		850: {
             perPage: 3,
-            fixedWidth: '32%',  
+            fixedWidth: '32%', 
+            flickMaxPages: 2, 
         },
         550: {
             perPage: 2,
             fixedWidth: '47.9%',  
+            flickMaxPages: 1,
         },
 	}
 }).mount();
@@ -63,12 +69,31 @@ new Splide( '#splide-3' , {
 		850: {
             perPage: 3,
             fixedWidth: '32%',  
+            flickMaxPages: 2,
         },
         550: {
             perPage: 2,
-            fixedWidth: '47.9%',  
+            fixedWidth: '47.9%', 
+            flickMaxPages: 1, 
         },
 	}
 }).mount();
+
+new Splide( '#splide-4', {
+	type    : 'loop',
+    perPage : 2,
+    pagination : false,
+    speed: 600,
+    rewindSpeed: 0,
+    classes: {
+	arrow : 'splide__arrow news-arrow',
+      },
+      breakpoints: {
+		850: {
+            perPage: 1,
+            fixedWidth: '100%',
+		},
+	}
+} ).mount();
 
 } );
