@@ -31,6 +31,10 @@ function closeHet(){
   closeX.classList.remove('chay'); 
   body.classList.remove('ghim');
 
+  for (let index = 1; index <= 4; index++) {
+    const closeFull = document.querySelector('.sub-'+index);
+    closeFull.classList.remove('show')
+  }
 }
 
 
