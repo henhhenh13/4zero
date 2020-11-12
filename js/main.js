@@ -34,7 +34,6 @@ function closeHet(){
 }
 
 
-
 function changeSub1(){
   var pro = document.querySelector('.sub-1');
   pro.classList.toggle('show');
