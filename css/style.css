@@ -368,13 +368,12 @@ header{
     color: white;
     font-size: 1.2rem;
     line-height: 40px;
-    margin-left: auto;
+    margin-left: 1em;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: relative;
     flex: 1;
-    width: 100%;
     margin-left: 2em;
 }
 
@@ -945,6 +944,134 @@ header{
     visibility: visible;
 }
 
+.box-news{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-img-news{
+    width: 70%;
+    height: 100%;
+}
+
+.box-img-news img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.box-new{
+    margin-left: 1.2em;
+    width: 45%;
+    text-align: left;
+}
+
+.box-new a{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.box-new p{
+    color: white;
+    font-size: 1.2em;
+}
+
+.gach{
+    margin-top: .5em;
+    margin-bottom: .5em;
+    height: 2px;
+    width: 100%;
+    max-width: 30px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.container-contact{
+    background-color: #000000;
+    width: 100%;
+    padding: 2.5em 0;
+}
+
+.container-contact .contacts{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 2em;
+    display: flex;
+}
+
+.container-contact .contacts .contact{
+    width: 25%;
+    margin: 0 .5em;
+}
+
+.contacts h4{
+    color: #dadada;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-fb .fb-page{
+    margin-top: .5em;
+}
+
+.text-huongdan{
+    margin-top: 1em;
+}
+
+.text-huongdan a{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.text-huongdan p{
+    margin: 1em 0;
+}
+
+.contact-lh .contact-info{
+    color: white;
+    margin-bottom: 1.5em;
+}
+
+.contact-lh .contact-info a{
+    color: white;
+    font-size: 1.2em;
+}
+
+.contact-lh .contact-info p{
+    margin-top: 0.5em;
+    font-size: 1.1em;
+    margin-bottom: .2em;
+}
+
+.contact-lh .contact-info a span{
+    font-size: .9em;
+    font-weight: 100;
+
+}
+
+.container-contact.footer{
+    background-color: #474747;
+    padding-top: 0.8em;
+}
+
+.container-contact.footer p{
+    color: #706f6d;
+    font-size: 1.1em;
+    font-size: 500;
+}
+
+.container-contact.footer p span{
+    color: #b8b6b3;
+
+}
+
 
 
 
@@ -1217,6 +1344,22 @@ header{
         flex-basis: 33.33%;
     }
 
+    .container-contact .contacts{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+    .container-contact .contacts .contact{
+        width: 100%;
+        margin: 0 .5em;
+    }
+
+    .contacts h4{
+        margin-top: 1em;
+    }
+
+    
+
 
 
     
@@ -1306,6 +1449,27 @@ header{
     .box-vape-mod .box-text-price span{
         font-size:  1em;
         font-weight: 500;
+    }
+
+    .box-news{
+        height: 200px;
+        
+    }
+    .box-img-news{
+        width: 50%;
+        height: 100%;
+    }
+    .box-new{
+        margin-left: 0.8em;
+        width: 45%;
+    }
+    .box-new a{
+        
+        font-size: 0.9em;
+        
+    }
+    .box-new p{
+        font-size: 0.75em;
     }
 
     
