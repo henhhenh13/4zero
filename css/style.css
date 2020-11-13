@@ -20,6 +20,90 @@
     list-style: none;
     color: white;
     scroll-behavior: smooth;
+    outline: none;
+}
+
+.search-s{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000000000;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.search-s.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.fill-s{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.search-s .input-icon-s{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 550px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.search-s .input-icon-s.show{
+    animation: xuongty 0.5s ease;
+}
+
+@keyframes xuongty{
+    from{
+        opacity: 0;
+        top: 40%;
+    }
+    to{
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+.search-s .input-icon-s .input{
+    width: 90%;
+    height: 100%;
+    box-shadow: 0 0 2px rgb(245, 245, 248);
+}
+
+.search-s .input-icon-s .input input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
+    color: black;
+    padding: 0 20px;
+}
+
+.search-s .input-icon-s .icon-s{
+    width: 10%;
+    height: 95%;
+    line-height: 60px;
+    background-color: var(--youtube);
+    text-align: center;
+    align-items: center;
+    font-size: 2em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.search-s .input-icon-s .icon-s:hover{
+    background-color: var(--youtube-hover);
 }
 
 body{
