@@ -15,7 +15,28 @@ window.addEventListener('scroll', function() {
   const body = document.querySelector('body');
   const freeDom = document.querySelector('.free-dom');
   const fullMenu = document.querySelector('.full-menu');
-  const closeX = document.querySelector('.close-full')
+  const closeX = document.querySelector('.close-full');
+  const searchHead = document.querySelector('.search-s');
+  const fill = document.querySelector('.fill-s');
+  const inputDown = document.querySelector('.input-icon-s');
+
+
+
+
+
+
+function ghimS(){
+  searchHead.classList.toggle('active');
+  body.classList.toggle('ghim');
+  inputDown.classList.toggle('show');
+
+}
+
+fill.addEventListener('click',function(){
+  searchHead.classList.remove('active');
+  body.classList.remove('ghim');
+  inputDown.classList.remove('show');
+})
 
 function showMenuPhone(){
   menu.classList.toggle('show-nav');
