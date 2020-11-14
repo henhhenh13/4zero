@@ -1168,12 +1168,7 @@ header{
 /* media 850px */
 @media (max-width: 850px){
     header{
-        position: relative;
         height: 71px;
-    }
-    .stuck{
-        height: 80p;
-        top: 0;
     }
     .free-dom.on{
         top: 0;
@@ -1203,12 +1198,16 @@ header{
     }
     .menu-nav-phone{
         display: block;
+        height: 71px;
+        width: 40px;
+        text-align: center;
     }
     .menu-nav-phone i{
         font-size: 1.3em;
         color: #fbf7f7;
         cursor: pointer;
         height: 100%;
+        line-height: 71px;
     }
     .search{
         display: none;
@@ -1523,6 +1522,11 @@ header{
     .container-info .textInfo-sub .textInfo h2{
         font-size: 1.75em;
         margin-bottom: 0.25em;
+    }
+
+    .container-info .textInfo-sub .textInfo p{
+        letter-spacing: 0;
+        line-height: 1.3;
     }
 
 
