@@ -3,11 +3,13 @@ const nav = document.getElementById('container-header');
 window.addEventListener('scroll', function() {
   const offset = window.pageYOffset;
   
-  if(offset > 500)
+  if(offset > 300)
     nav.classList.add('stuck')
   else if(offset< 10)
     nav.classList.remove('stuck')
 });
+
+
 
 
 
@@ -19,10 +21,6 @@ window.addEventListener('scroll', function() {
   const searchHead = document.querySelector('.search-s');
   const fill = document.querySelector('.fill-s');
   const inputDown = document.querySelector('.input-icon-s');
-
-
-
-
 
 
 function ghimS(){
@@ -45,6 +43,7 @@ function showMenuPhone(){
   closeX.classList.toggle('chay'); 
   body.classList.toggle('ghim');
 }
+
 function closeHet(){
   menu.classList.remove('show-nav');
   freeDom.classList.remove('on'); 
