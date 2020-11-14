@@ -1465,6 +1465,9 @@ header{
 
 /* media550px */
 @media (max-width: 550px){
+    *{
+        word-spacing: 0;
+    }
     .id-header{
         height: 71px;
     }
