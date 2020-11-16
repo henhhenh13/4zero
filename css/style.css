@@ -106,6 +106,83 @@
     background-color: var(--youtube-hover);
 }
 
+.form-login{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100000000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-login .form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    z-index: 10000000000;
+    background-color: white;
+    height: 50%;
+}
+
+.form-login .form .sing-in, .form-login .form .sing-up{
+    margin: 0 1em;
+    width: 50%;
+    padding: 2em 1em;
+}
+
+.form-login .form h3, .form-login .form h4, .form-login .form a{
+    color: rgb(49, 48, 48);
+}
+
+.form-login .form h3{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+
+.form-login .form a{
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    background-color: var(--instagram);
+    transition: 0.5s ease;
+}
+
+.form-login .form a:hover{
+    background-color: var(--instagram-hover);
+}
+
+
+
+
+
+.form-login .form input{
+    width: 100%;
+    height: 11%;
+    margin: 1.5em 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: black;
+    padding: 0 1em;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
 body{
     font-size: 100%;
     width: 100% !important;
