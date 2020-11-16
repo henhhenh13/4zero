@@ -40,6 +40,31 @@
     visibility: visible;
 }
 
+.search-child.off{
+    animation: lenNao1 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes lenNao1{
+    from{
+        transform: translate(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+
+
+.search-child.on{
+    opacity: 1;
+    visibility: visible;
+    animation: xuongNao 0.5s;
+}
+
+
 .fill-s{
     position: absolute;
     top: 0;
