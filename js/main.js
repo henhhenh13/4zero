@@ -1,24 +1,36 @@
-const nav = document.getElementById('container-header');
-
-window.addEventListener('scroll', function() {
-  const offset = window.pageYOffset;
-  
-  if(offset > 300)
-    nav.classList.add('stuck')
-  else if(offset< 10)
-    nav.classList.remove('stuck')
-});
 
 
 
 
 
-  const menu = document.querySelector('#id-head-nav');
+
+
+
+
+// Khi scroll header thành fixed
+function onHead(){
+  const nav = document.getElementById('container-header');
+  window.addEventListener('scroll', function() {
+    const offset = window.pageYOffset;
+    
+    if(offset > 300)
+      nav.classList.add('stuck')
+    else if(offset< 10)
+      nav.classList.remove('stuck')
+  });
+};
+
+onHead();
+
+
+
+
+
+
   const body = document.querySelector('body');
-  const freeDom = document.querySelector('.free-dom');
-  const fullMenu = document.querySelector('.full-menu');
   const closeX = document.querySelector('.close-full');
   const searchHead = document.querySelector('.search-s');
+  const searchChild = document.querySelector('.search-child');
   const fillOne = document.querySelector('.fill1');
   const fillTwo = document.querySelector('.fill2');
   const inputDown = document.querySelector('.input-icon-s');
@@ -26,13 +38,24 @@ window.addEventListener('scroll', function() {
   const formLogin = document.querySelector('.form-login');
   const formDown = document.querySelector('.form');
 
-
-function ghimS(){
+// Bật and tắt form search
+function ghimSearch(){
   searchHead.classList.toggle('active');
   body.classList.toggle('ghim');
   inputDown.classList.toggle('show');
-}
+  searchChild.classList.remove('on');
+  searchChild.classList.toggle('off');
+};
+fillTwo.addEventListener('click',function(){
+  body.classList.remove('ghim');
+  formDown.classList.remove('show');
+  formLogin.classList.remove('active');
+  userOn.classList.remove('off');
+  userOn.classList.toggle('on');
+});
 
+
+// Bật and tắt form log
 userOn.addEventListener('click',function(){
   formLogin.classList.toggle('active');
   body.classList.toggle('ghim');
@@ -46,16 +69,15 @@ fillOne.addEventListener('click',function(){
   body.classList.remove('ghim');
   inputDown.classList.remove('show');
   formLogin.classList.remove('active');
+  searchChild.classList.remove('off');
+  searchChild.classList.toggle('on');
 })
 
-fillTwo.addEventListener('click',function(){
-  body.classList.remove('ghim');
-  formDown.classList.remove('show');
-  formLogin.classList.remove('active');
-  userOn.classList.remove('off');
-  userOn.classList.toggle('on');
-})
 
+
+// Show menu header of phone
+const menu = document.querySelector('#id-head-nav');
+const freeDom = document.querySelector('.free-dom');
 function showMenuPhone(){
   menu.classList.toggle('show-nav');
   freeDom.classList.toggle('on'); 
@@ -64,6 +86,7 @@ function showMenuPhone(){
   body.classList.toggle('ghim');
 }
 
+// Tắt hết sub-menu đã active
 function closeHet(){
   menu.classList.remove('show-nav');
   freeDom.classList.remove('on'); 
@@ -77,7 +100,7 @@ function closeHet(){
   }
 }
 
-
+// Quay -180 of sub-menu
 function changeSub1(){
   var pro = document.querySelector('.sub-1');
   pro.classList.toggle('show');
