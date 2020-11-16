@@ -19,21 +19,41 @@ window.addEventListener('scroll', function() {
   const fullMenu = document.querySelector('.full-menu');
   const closeX = document.querySelector('.close-full');
   const searchHead = document.querySelector('.search-s');
-  const fill = document.querySelector('.fill-s');
+  const fillOne = document.querySelector('.fill1');
+  const fillTwo = document.querySelector('.fill2');
   const inputDown = document.querySelector('.input-icon-s');
+  const userOn = document.querySelector('.user-on');
+  const formLogin = document.querySelector('.form-login');
+  const formDown = document.querySelector('.form');
 
 
 function ghimS(){
   searchHead.classList.toggle('active');
   body.classList.toggle('ghim');
   inputDown.classList.toggle('show');
-
 }
 
-fill.addEventListener('click',function(){
+userOn.addEventListener('click',function(){
+  formLogin.classList.toggle('active');
+  body.classList.toggle('ghim');
+  formDown.classList.toggle('show');
+  userOn.classList.remove('on');
+  userOn.classList.toggle('off');
+})
+
+fillOne.addEventListener('click',function(){
   searchHead.classList.remove('active');
   body.classList.remove('ghim');
   inputDown.classList.remove('show');
+  formLogin.classList.remove('active');
+})
+
+fillTwo.addEventListener('click',function(){
+  body.classList.remove('ghim');
+  formDown.classList.remove('show');
+  formLogin.classList.remove('active');
+  userOn.classList.remove('off');
+  userOn.classList.toggle('on');
 })
 
 function showMenuPhone(){
