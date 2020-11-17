@@ -215,6 +215,11 @@
     color: black;
     padding: 0 1em;
     font-size: 1.2em;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.form-login .form input.input-tt:hover{
+    box-shadow: none;
 }
 
 .form-login .form .forgot-pass{
@@ -274,6 +279,7 @@ header{
     z-index: 9999;
     
 }
+
 
 @keyframes width{
     0%{transform:translateY(-100%)}100%{transform:translateY(0)}
@@ -928,7 +934,7 @@ header{
 }
 
 .container-info .textInfo-sub{
-    width: 50%;
+    width: 44%;
     height: 80%;
     text-align: center;
     color: white;
@@ -949,6 +955,7 @@ header{
     font-size: 1em;
     font-weight: 100;
     letter-spacing: 0.1em;
+    line-height: 1.5;
 }
 
 .container-info .textInfo-sub .sub{
@@ -1421,7 +1428,7 @@ header{
     }
     .head-nav{
         width: 250px;
-        background-color: #F7F5F3;
+        background-color: #ffffff;
         min-height: 100%;
         overflow: scroll;
     }
@@ -1498,9 +1505,12 @@ header{
         justify-content: space-between;
     }
     .menu-items li a{
+        font-size: 0.85em;
+        word-spacing: 0;
         width: auto;
         padding: 0;
         color: rgba(102,102,102,0.85);
+        font-weight: 600;
         text-transform: uppercase;
         margin-left: 1em;
         padding-right: 1.5em;
@@ -1547,15 +1557,28 @@ header{
         width: 100%;
         text-align: left;
         color: rgba(102,102,102,0.85) !important;
-        animation: fade 0.3s ease-in-out;
+        animation: fadeX 0.3s ease;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
     }
+
+    @keyframes fadeX {
+        from{
+            opacity: 0;
+            transform: translateX(-10%);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+    }
+
     .sub-menu::before, .sub-menu::after{
         display: none;
     }
     .menu-items li:hover{
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: rgb(236, 236, 236);
     }
     .menu-items li:hover a,.menu-items li:hover i{
         color: rgb(70, 68, 68);
@@ -1570,6 +1593,9 @@ header{
         display: none;
     }
 
+    .box-vape-mod{
+        padding: 0 15px;
+    }
 
     .main .text-box{
         width: 77%;
@@ -1583,9 +1609,6 @@ header{
         margin-right: 1em;
         padding: 0 0.75em;
     }
-
-
-
 
     .main .text-box .text h4{
         font-size: 1.5em;
