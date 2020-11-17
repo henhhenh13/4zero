@@ -78,6 +78,7 @@ fillOne.addEventListener('click',function(){
 // Show menu header of phone
 const menu = document.querySelector('#id-head-nav');
 const freeDom = document.querySelector('.free-dom');
+const fullMenu = document.querySelector('.full-menu');
 function showMenuPhone(){
   menu.classList.toggle('show-nav');
   freeDom.classList.toggle('on'); 
@@ -129,3 +130,5 @@ function changeSub4(){
   var btn_sub = document.querySelector('.btn-sub-4');
   btn_sub.classList.toggle('quay');
 }
+
+
