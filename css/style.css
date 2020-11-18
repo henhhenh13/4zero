@@ -722,7 +722,7 @@ header{
     height: 569px;
     display: block;
     background-color: khaki;
-    background-image: url(./images/background/background-main.jpg);
+    background-image: inherit;
     background-position: bottom;
     background-size: cover;
 }
@@ -815,23 +815,9 @@ header{
     
 }
 
-.container-items .items .item.item1{
-    background: url(./images/background/item-1.jpg);
-    background-position: 50% 50%;
-    
-}
-
-.container-items .items .item.item2{
-    background: url(./images/background/item-2.jpg);
-    background-position: 50% 50%;
-    
-    
-}
-
-.container-items .items .item.item3{
-    background: url(./images/background/item-3.jpg);
-    background-position: 50% 50%;
-    
+.container-items .items .item{
+    background-image: inherit;
+    background-position: 50% 50% !important;
 }
 
 .container-items .items .item{
