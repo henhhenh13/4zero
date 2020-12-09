@@ -63,8 +63,8 @@
             <div id="container-header">
                 <div class="id-header">
                     <div class="head-header container">
-                        <div class="menu-nav-phone">
-                            <i class="fas fa-bars" onclick="showMenuPhone()"></i>
+                        <div class="menu-nav-phone" id="btn-show-menus">
+                            <i class="fas fa-bars"></i>
                         </div>
                         <div class="contact-time-sdt">
                             <div class="logo">
@@ -96,35 +96,35 @@
 
                     </div>
                 </div>
-                <div class="free-dom"></div>
+                <div class="free-dom closeMenus"></div>
                 <div class="id-head-nav" id="id-head-nav">
                     <div class="id-nav container">
                         <div class="head-nav">
                             <ul class="menu-items">
                                 <li><a href="#" class="active">Flash sale</a></li>
                                 <li><a href="#">4Zero home</a></li>
-                                <li><a href="#">Vape kits/mod</a><i class="fas fa-chevron-down btn-sub-1" onclick="changeSub1()"></i>
-                                    <ul class="sub-menu sub-1">
+                                <li><a href="#">Vape kits/mod</a><i class="fas fa-chevron-down btn-sub"></i>
+                                    <ul class="sub-menu">
                                         <li><a href="#">Vape mod</a></li>
                                         <li><a href="#">Vape kit</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Pod system</a><i class="fas fa-chevron-down btn-sub-2" onclick="changeSub2()"></i>
-                                    <ul class="sub-menu sub-2">
+                                <li><a href="#">Pod system</a><i class="fas fa-chevron-down btn-sub"></i>
+                                    <ul class="sub-menu">
                                         <li><a href="#">Pod AIO Kits</a></li>
                                         <li><a href="#">Pod mod</a></li>
                                         <li><a href="#">Pod 1 lần</a></li>
                                         <li><a href="#">Close pod</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Tinh dầu juice</a><i class="fas fa-chevron-down btn-sub-3" onclick="changeSub3()"></i>
-                                    <ul class="sub-menu sub-3">
+                                <li><a href="#">Tinh dầu juice</a><i class="fas fa-chevron-down btn-sub"></i>
+                                    <ul class="sub-menu">
                                         <li><a href="#">Tinh dầu freebase</a></li>
                                         <li><a href="#">Tinh dầu salt nicotine</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Đầu đốt vape</a><i class="fas fa-chevron-down btn-sub-4" onclick="changeSub4()"></i>
-                                    <ul class="sub-menu sub-4">
+                                <li><a href="#">Đầu đốt vape</a><i class="fas fa-chevron-down btn-sub"></i>
+                                    <ul class="sub-menu">
                                         <li><a href="#">Đâu đốt pod</a></li>
                                         <li><a href="#">Đầu đốt vape box</a></li>
                                         <li><a href="#">Đầu occ</a></li>
@@ -142,8 +142,8 @@
                         
                     </div>
                 </div>
-                <div class="full-menu" onclick="closeHet()"></div>
-                <i><i class="fas fa-times close-full" onclick="closeHet()"></i></i>
+                <div class="full-menu closeMenus"></div>
+                <i><i class="fas fa-times close-full closeMenus"></i></i>
             </div>
         </header>
 
@@ -926,6 +926,16 @@
     
     <!--js-->
     <script src="./js/main.js"></script>
+    <script>
+        menuDropDownMobile ({
+            menuShowMobile: '#id-head-nav',
+            btnShowMenus: '#btn-show-menus',
+            closeMenus: '.closeMenus',
+            btnShowMenuSub: '.btn-sub',
+            subMenu: '.sub-menu',
+        });
+    </script>
+
     <script src="./js/app.js"></script>
 </body>
 </html>
