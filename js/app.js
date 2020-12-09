@@ -1,5 +1,5 @@
 document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide( '#splide' , {
+    new Splide( '#splide', {
     type: 'loop',
     perPage: 4,
     fixedWidth: '23.8%',
