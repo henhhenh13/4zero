@@ -1446,7 +1446,7 @@ header{
         opacity: 0;
         visibility: hidden;
     }
-    .close-full.chay{
+    .close-full.on{
         animation: chay 0.5s ease;
         opacity: 1;
         visibility: visible;
